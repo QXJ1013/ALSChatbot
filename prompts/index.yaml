@@ -1,0 +1,6 @@
+default: informative_en.txt
+
+mappings:
+  informative: informative_en.txt
+  empathetic: empathetic_en.txt
+  encouraging: encouraging_en.txt

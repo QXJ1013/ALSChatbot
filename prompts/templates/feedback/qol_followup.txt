@@ -1,0 +1,8 @@
+Last time, the user received the following recommendation: {previous_recommendation}
+
+Please ask a gentle follow-up question to know if the recommendation was:
+- tried
+- helpful
+- needs adjustment
+
+Keep the tone friendly and reflective.

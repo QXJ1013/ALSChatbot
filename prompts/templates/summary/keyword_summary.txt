@@ -1,0 +1,6 @@
+Summarize what the user has been most concerned with recently, across all interactions.
+
+Here are the 5 most common concepts from the last 7 days of input:
+{keywords}
+
+Write a 2-sentence summary to show you understand the focus, and gently prompt further guidance if applicable.
