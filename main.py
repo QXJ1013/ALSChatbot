@@ -8,8 +8,8 @@ from app.core.context_memory import ContextMemory
 from app.utils.config import settings
 from app.utils.logger import setup_logging
 
-from prompts.builder.prompt_builder import PromptBuilder
-from app.utils.ibm_client import IBMClient  # to be implemented
+from app.core.prompt_builder import PromptBuilder
+from app.utils.ibm_client import IBMClient 
 
 # Set up structured logging
 setup_logging()

@@ -1,18 +1,17 @@
 import pytest
 from httpx import AsyncClient
-from app.main import app
+from main import app
 
 @pytest.mark.asyncio
 async def test_chat_endpoint():
-    """测试聊天接口"""
     async with AsyncClient(app=app, base_url="http://test") as ac:
-        # 模拟登录获取token
+        # get token
         token = "test_token"
         
-        # 发送聊天消息
+        # send message
         response = await ac.post(
             "/api/chat/",
-            json={"message": "我感觉今天呼吸有点困难"},
+            json={"message": "I feel a bit difficult to breathe today"},
             headers={"Authorization": f"Bearer {token}"}
         )
         
@@ -24,16 +23,15 @@ async def test_chat_endpoint():
 
 @pytest.mark.asyncio
 async def test_chat_with_session():
-    """测试带会话ID的聊天"""
+    """test chat with id"""
     async with AsyncClient(app=app, base_url="http://test") as ac:
         token = "test_token"
         session_id = "test_session_123"
         
-        # 第一条消息
         response1 = await ac.post(
             "/api/chat/",
             json={
-                "message": "你好",
+                "message": "hello",
                 "session_id": session_id
             },
             headers={"Authorization": f"Bearer {token}"}
@@ -42,15 +40,14 @@ async def test_chat_with_session():
         assert response1.status_code == 200
         assert response1.json()["session_id"] == session_id
         
-        # 第二条消息（应该记住上下文）
         response2 = await ac.post(
             "/api/chat/",
             json={
-                "message": "我刚才说了什么？",
+                "message": "what did I say？",
                 "session_id": session_id
             },
             headers={"Authorization": f"Bearer {token}"}
         )
         
         assert response2.status_code == 200
-        # TODO: 验证上下文记忆
+        # TODO: test context memory

@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 from typing import List, Optional
+import uuid
 
 from app.embedding.retriever import SemanticRetriever
 from app.utils.auth import get_current_user
@@ -26,7 +27,6 @@ async def semantic_search(
     request: QueryRequest,
     current_user: dict = Depends(get_current_user)
 ):
-    """语义搜索接口"""
     retriever = SemanticRetriever()
     results = await retriever.search(
         query=request.query,

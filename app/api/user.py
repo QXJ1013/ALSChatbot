@@ -26,17 +26,14 @@ class LoginRequest(BaseModel):
 
 @router.post("/register", response_model=UserResponse)
 async def register(user: UserCreate, db=Depends(get_db)):
-    """用户注册"""
-    # TODO: 实现用户注册逻辑
+   
     pass
 
 @router.post("/login")
 async def login(request: LoginRequest, db=Depends(get_db)):
-    """用户登录"""
-    # TODO: 实现登录逻辑
+  
     pass
 
 @router.get("/me", response_model=UserResponse)
 async def get_me(current_user: dict = Depends(get_current_user)):
-    """获取当前用户信息"""
     return UserResponse(**current_user)
