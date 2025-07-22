@@ -1,5 +1,51 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+import os
+import pathlib
+from app.api import chat_light
+
+BASE_DIR = pathlib.Path(__file__).resolve().parent.parent 
+load_dotenv(BASE_DIR / ".env")
+
+print("HF_API_TOKEN Loaded:", os.getenv("HF_API_TOKEN"))
+print("HF_MODEL_NAME Loaded:", os.getenv("HF_MODEL_NAME", "mistralai/Mistral-7B-Instruct-v0.2"))
+
+app = FastAPI(
+    title="ALS Chatbot (Light Version)",
+    version="0.1",
+    description="Simple testable chat interface with Hugging Face or mock response."
+)
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+  # use light version for now
+app.include_router(chat_light.router, prefix="/api/chat", tags=["Chat"])
+
+
+@app.get("/")
+async def root():
+    return {
+        "message": "ALS Chatbot API is running",
+        "version": "0.1",
+        "env_token_loaded": bool(os.getenv("HF_API_TOKEN"))  # quick debug info
+    }
+
+
+
+
+
+
+
+""" from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 import structlog
 
@@ -74,3 +120,4 @@ async def root():
 @app.get("/health")
 async def health_check():
     return {"status": "healthy"}
+ """

@@ -3,42 +3,42 @@ import re
 import json
 
 class NeedsAnalyzer:
-    """需求识别分析器"""
+    """Needs identification analyzer"""
     
     def __init__(self):
         self.load_patterns()
     
     def load_patterns(self):
-        """加载需求识别模式"""
-        # TODO: 从文件加载
+        """Load needs identification patterns"""
+        # TODO: Load from file
         self.patterns = {
             "physical": {
-                "keywords": ["疼痛", "无力", "疲劳", "呼吸", "吞咽"],
-                "patterns": [r".*感觉.*无力.*", r".*呼吸.*困难.*"]
+                "keywords": ["pain", "weakness", "fatigue", "breathing", "swallowing", "mobility", "walking", "movement"],
+                "patterns": [r".*feel.*weak.*", r".*breathing.*difficult.*", r".*trouble.*swallowing.*", r".*can't.*move.*"]
             },
             "emotional": {
-                "keywords": ["焦虑", "害怕", "担心", "抑郁", "孤独"],
-                "patterns": [r".*感到.*焦虑.*", r".*很.*害怕.*"]
+                "keywords": ["anxious", "scared", "worried", "depressed", "lonely", "upset", "frustrated", "angry"],
+                "patterns": [r".*feel.*anxious.*", r".*very.*scared.*", r".*feeling.*depressed.*"]
             },
             "social": {
-                "keywords": ["家人", "朋友", "交流", "理解", "陪伴"],
-                "patterns": [r".*想.*聊天.*", r".*需要.*陪伴.*"]
+                "keywords": ["family", "friends", "talk", "understand", "company", "support", "isolation", "alone"],
+                "patterns": [r".*want.*to.*talk.*", r".*need.*company.*", r".*feeling.*alone.*"]
             },
             "information": {
-                "keywords": ["了解", "知道", "信息", "治疗", "药物"],
-                "patterns": [r".*想.*了解.*", r".*有什么.*方法.*"]
+                "keywords": ["understand", "know", "information", "treatment", "medication", "therapy", "research"],
+                "patterns": [r".*want.*to.*understand.*", r".*what.*treatment.*", r".*how.*does.*work.*"]
             },
             "spiritual": {
-                "keywords": ["意义", "价值", "信仰", "希望"],
-                "patterns": [r".*生活.*意义.*", r".*还有.*希望.*"]
+                "keywords": ["meaning", "purpose", "faith", "hope", "legacy", "God", "prayer", "afterlife"],
+                "patterns": [r".*life.*meaning.*", r".*still.*hope.*", r".*what.*purpose.*"]
             }
         }
     
     async def analyze(self, message: str, stage_info: Dict) -> List[Dict[str, Any]]:
-        """分析用户需求"""
+        """Analyze user needs"""
         needs = []
         
-        # 关键词匹配
+        # Keyword matching
         for need_type, config in self.patterns.items():
             score = self._calculate_need_score(message, config)
             if score > 0.3:
@@ -48,39 +48,41 @@ class NeedsAnalyzer:
                     "matched_keywords": self._find_matched_keywords(message, config["keywords"])
                 })
         
-        # 根据阶段调整需求权重
+        # Adjust need weights based on stage
         needs = self._adjust_by_stage(needs, stage_info)
         
-        # 排序
+        # Sort by confidence
         needs.sort(key=lambda x: x["confidence"], reverse=True)
         
-        return needs[:3]  # 返回前3个最可能的需求
+        return needs[:3]  # Return top 3 most likely needs
     
     def _calculate_need_score(self, message: str, config: Dict) -> float:
-        """计算需求匹配分数"""
+        """Calculate need matching score"""
         score = 0.0
+        message_lower = message.lower()
         
-        # 关键词匹配
+        # Keyword matching
         for keyword in config["keywords"]:
-            if keyword in message:
+            if keyword.lower() in message_lower:
                 score += 0.3
         
-        # 模式匹配
+        # Pattern matching
         for pattern in config["patterns"]:
-            if re.match(pattern, message):
+            if re.search(pattern, message_lower):
                 score += 0.5
         
         return min(score, 1.0)
     
     def _find_matched_keywords(self, message: str, keywords: List[str]) -> List[str]:
-        """找出匹配的关键词"""
-        return [kw for kw in keywords if kw in message]
+        """Find matched keywords"""
+        message_lower = message.lower()
+        return [kw for kw in keywords if kw.lower() in message_lower]
     
     def _adjust_by_stage(self, needs: List[Dict], stage_info: Dict) -> List[Dict]:
-        """根据疾病阶段调整需求权重"""
+        """Adjust need weights based on disease stage"""
         stage = stage_info["stage"]
         
-        # 阶段特定的需求权重调整
+        # Stage-specific need weight adjustments
         adjustments = {
             "early": {"information": 1.2, "emotional": 1.1},
             "middle": {"physical": 1.2, "social": 1.1},

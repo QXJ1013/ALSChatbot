@@ -25,8 +25,8 @@ async def submit_feedback(
     current_user: dict = Depends(get_current_user),
     db=Depends(get_db)
 ):
-    """提交用户反馈"""
-    # TODO: 保存反馈到数据库
+    """SUBMIT FEEDBACK"""
+
     pass
 
 @router.get("/qol-history")
@@ -34,6 +34,7 @@ async def get_qol_history(
     current_user: dict = Depends(get_current_user),
     days: int = 30
 ):
-    """获取QoL历史数据"""
-    # TODO: 返回用户的生活质量评分历史
+    """GET QoL HISTORY
+"""
+    
     pass

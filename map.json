@@ -1,0 +1,653 @@
+[
+    {
+      "topic": "Advance care directives",
+      "subtopic": "Continue/discontinue treatment",
+      "guidance": "Follow due process in line with personal wishes",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Advance care directives",
+      "subtopic": "Decision makers",
+      "guidance": "Process of engaging with identified persons",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "End of life considerations",
+      "subtopic": "Wishes",
+      "guidance": "Ensure 'wishes' documentation is in place (including where, how, environment, who else is present etc)",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "End of life considerations",
+      "subtopic": "Location",
+      "guidance": "Align with specific requirements for each country/region",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Estates",
+      "subtopic": "Location",
+      "guidance": "How services will vary from country to country",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Wills",
+      "subtopic": "Location",
+      "guidance": "Provide relevant checklist",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Power of attorney",
+      "subtopic": "Location",
+      "guidance": "Ensure appropriate documentation, legally compliant, is in place",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Confidentiality & privacy",
+      "subtopic": "Location",
+      "guidance": "Accommodate any personal requests on personal/medical data handling",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Employment",
+      "subtopic": "Payroll",
+      "guidance": "Ensure up to date details (incl next of kin)",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Employment",
+      "subtopic": "Safeguarding for discrimination",
+      "guidance": "Internal company policies",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Finances",
+      "subtopic": "Budgeting",
+      "guidance": "Advice/guidance leaflet - with tailored checklist? ",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Finances",
+      "subtopic": "Banking",
+      "guidance": "Creating joint-access accounts if appropriate? Store in safe place",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Finances",
+      "subtopic": "Trusts",
+      "guidance": "Store of overall financial position/assets",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Finances",
+      "subtopic": "Risk management",
+      "guidance": "Specialist advice? ",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Insurance",
+      "subtopic": "Life insurance",
+      "guidance": "Level of coverage vs costs vs what is available and provided for",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Benefits",
+      "subtopic": "Life insurance",
+      "guidance": "Eligibility in relation to public health policies",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Care",
+      "subtopic": "Family caregivers",
+      "guidance": "Relationship, role they play, access they have…",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Care",
+      "subtopic": "Paid caregivers",
+      "guidance": "Role and duties they perform, access they have, times they come…",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Care",
+      "subtopic": "Paid caregivers",
+      "guidance": "Access to information, resources, support…",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Care",
+      "subtopic": "Subsidies",
+      "guidance": "What is available in each region/country",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Care",
+      "subtopic": "Home care",
+      "guidance": "What is available and applicable per individual case - incl impact on CALS",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Care",
+      "subtopic": "Long term care",
+      "guidance": "Appropriate planning re: location e.g. care-home, care facility, hospice…",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Caregivers",
+      "subtopic": "Training",
+      "guidance": "Learning the basics from qalified professionals (OTs, SLTs etc)",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Caregivers",
+      "subtopic": "Time management",
+      "guidance": "Balancing care duties with personal needs, work etc",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Caregivers",
+      "subtopic": "Young caregivers",
+      "guidance": "Role they play, physical/emotional impact, respite and breaks",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Emergency preparedness",
+      "subtopic": "Young caregivers",
+      "guidance": "Access to information and resources kit",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Getting around",
+      "subtopic": "Travel ",
+      "guidance": "Guidelines on information and good practices",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Getting around",
+      "subtopic": "Transportation",
+      "guidance": "Mode (car, bus, train, plane etc) and associated considerations",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Getting around",
+      "subtopic": "Accessibility ",
+      "guidance": "Adaptations - based on individual mobility",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Equipment and technology",
+      "subtopic": "Home adaptations",
+      "guidance": "Digital and analog",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Equipment and technology",
+      "subtopic": "Equipment",
+      "guidance": "Management and maintenance",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Equipment and technology",
+      "subtopic": "Safety",
+      "guidance": "Medical devices and COTS products, e.g., fall monitors",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Equipment and technology",
+      "subtopic": "Assistive technologies",
+      "guidance": "Digital and analog (hardware, software, services)",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Communicating about ALS/MND",
+      "subtopic": "Support network",
+      "guidance": "Community - levels of access and trust ('different circles')",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Communicating about ALS/MND",
+      "subtopic": "Family planning",
+      "guidance": "Considerations: legal, social, emotional",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Communicating about ALS/MND",
+      "subtopic": "Difficult conversations",
+      "guidance": "Guidance, shared stories",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Why/why not get genetic testing",
+      "subtopic": "Further guidance",
+      "guidance": "Information resources",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Diagnostic testing",
+      "subtopic": "Further guidance",
+      "guidance": "Family history, availability",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Predictive testing",
+      "subtopic": "Further guidance",
+      "guidance": "Family history, availability",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Accessibility",
+      "subtopic": "Cost",
+      "guidance": "Affordability",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Muscles, mobility, and exercise",
+      "subtopic": "Physical therapy",
+      "guidance": "Off the shelf braces, splints, massagers etc. ",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Muscles, mobility, and exercise",
+      "subtopic": "Moderate exercise plans",
+      "guidance": "Personalised for each person based on needs/goals - sensor based tracking",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Muscles, mobility, and exercise",
+      "subtopic": "Passive range of motion",
+      "guidance": "Wearables to support appropriate activities",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Muscles, mobility, and exercise",
+      "subtopic": "Mobility aids",
+      "guidance": "Wheelchair, walker/stroller, frames, hoist/lift",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Nutrition",
+      "subtopic": "Diet",
+      "guidance": "Food thickener, range and variety of items",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Nutrition",
+      "subtopic": "Weight management",
+      "guidance": "Digital scales, eating assistance devices (manual, robotic)",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Nutrition",
+      "subtopic": "Feeding tubes",
+      "guidance": "Care and hygiene",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Nutrition",
+      "subtopic": "Eating aids",
+      "guidance": "Adjustable height table, flexible drink holder, easy grip utensils",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Saliva and swallowing",
+      "subtopic": "Risks",
+      "guidance": "Monitoring swallow strength and capability",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Saliva and swallowing",
+      "subtopic": "Medication",
+      "guidance": "Electronic pill dispenser, pill crusher",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Saliva and swallowing",
+      "subtopic": "Suction equipment",
+      "guidance": "Care and hygiene",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Breathing",
+      "subtopic": "Exercises",
+      "guidance": "Structured breathing exercises, relaxation apps",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Breathing",
+      "subtopic": "Invasive and non-invasive ventilation",
+      "guidance": "Bipap, VOCSN devices",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Fatigue and sleep",
+      "subtopic": "Rest",
+      "guidance": "Automated recliner",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Fatigue and sleep",
+      "subtopic": "Sleep",
+      "guidance": "Digital tracker, wearable",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Fatigue and sleep",
+      "subtopic": "Positioning",
+      "guidance": "Automated bed turning, cushions, sculptured foam",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Fatigue and sleep",
+      "subtopic": "Insomnia",
+      "guidance": "Virtual reality, meditation",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Voice preservation",
+      "subtopic": "Insomnia",
+      "guidance": "Voice banking, message banking, AI, multi-lingual, socio-cultural",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Augmentative Alternative Communication",
+      "subtopic": "Insomnia",
+      "guidance": "Digital and analog boards, apps, devices, cost, new neural interfaces",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Hygiene",
+      "subtopic": "Oral hygiene",
+      "guidance": "Adaptive grips",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Hygiene",
+      "subtopic": "Showering",
+      "guidance": "Shower chair, support rails",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Hygiene",
+      "subtopic": "Toileting",
+      "guidance": "Support rails, bidet",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Hygiene",
+      "subtopic": "Skin care",
+      "guidance": "Information and guidance",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Hygiene",
+      "subtopic": "Foot and nail care",
+      "guidance": "Adaptive grips for clippers, files",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Hygiene",
+      "subtopic": "Hair and beauty",
+      "guidance": "Adaptive grips for brush, comb",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Hygiene",
+      "subtopic": "Dressing",
+      "guidance": "Adaptive clothes, shoes, fasteners",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Hygiene",
+      "subtopic": "Ear wax",
+      "guidance": "Adaptive grips for buds",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Activities",
+      "subtopic": "Laundry",
+      "guidance": "Smart washing machines",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Activities",
+      "subtopic": "Meal prep",
+      "guidance": "Adaptive grips for slicing, dicing",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Activities",
+      "subtopic": "Knitting",
+      "guidance": "Design, social group, adaptive aids",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Activities",
+      "subtopic": "Parent",
+      "guidance": NaN,
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Activities",
+      "subtopic": "Reading",
+      "guidance": "Digital and analog, book/magazine holder, page turner",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Activities",
+      "subtopic": "Email",
+      "guidance": "Across devices, type/speak for input",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Family and relationships counselling",
+      "subtopic": "Life changes",
+      "guidance": "Online/in-person, individual/couples/group therapy",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Mental health counselling",
+      "subtopic": "Coming to terms with a terminal illness",
+      "guidance": "Personal growth, self-reflective agent AI",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Mental health counselling",
+      "subtopic": "Purpose and meaning, legacy",
+      "guidance": "Personal growth, self-reflective agent AI",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Mental health counselling",
+      "subtopic": "Regrets, unfinished business",
+      "guidance": "Personal growth, self-reflective agent AI",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Social support",
+      "subtopic": "Activites",
+      "guidance": "Community groups, WhatsApp etc.",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Bereavement support",
+      "subtopic": "Anticipatory grief",
+      "guidance": "Resources and information, journalling",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Peer support",
+      "subtopic": "Support groups",
+      "guidance": "Community, social circles",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Cognition",
+      "subtopic": "Managing changes",
+      "guidance": "Personal activity monitoring, trends tracking, gaming/puzzles",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Entertainment",
+      "subtopic": "Arts",
+      "guidance": "Creative expression - digital/analog aids for painting, music",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Entertainment",
+      "subtopic": "Literature",
+      "guidance": "Biographical, legacy, memoriam",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Entertainment",
+      "subtopic": "Cooking",
+      "guidance": "Adaptive grips",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Entertainment",
+      "subtopic": "Films",
+      "guidance": "Tv/radio remote control",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Entertainment",
+      "subtopic": "Gaming",
+      "guidance": "Adaptive switches (head, mouth, arm, foot, hand…)",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Entertainment",
+      "subtopic": "Sports",
+      "guidance": "Adaptive aids for recreational activities, fresh air e.g. water wheelchair",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Entertainment",
+      "subtopic": "Other hobbies",
+      "guidance": "Adaptive aids  ",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Entertainment",
+      "subtopic": "Dining out",
+      "guidance": "Access, space, adpative grips, eating aids",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Intimacy",
+      "subtopic": "Dining out",
+      "guidance": "Information guides, resources, adaptive aids",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Spirituality",
+      "subtopic": "Dining out",
+      "guidance": "Meditation, self-reflection, VR/dreaming, audio",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Self-care",
+      "subtopic": "PALS & Caregivers ",
+      "guidance": "Information guides, support communities",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    },
+    {
+      "topic": "Self-care",
+      "subtopic": "Impact of ALS/MND on caregivers & family",
+      "guidance": "Resilience (emotional, mental, physical), balance, notion of self and identity",
+      "prompt_template": NaN,
+      "agent_question": NaN
+    }
+  ]

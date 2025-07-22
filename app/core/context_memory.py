@@ -4,9 +4,9 @@ import asyncio
 from datetime import datetime
 import redis.asyncio as redis
 
-from database.users.conversation import Conversation  # Make sure it's importable
+from database.users.conversation import Conversation  
 from sqlalchemy.orm import Session
-from db.session import get_session  # Your SQLAlchemy session provider
+# from db.session import get_session  SQLAlchemy session provider
 
 class ContextMemory:
     """Conversation memory context manager with Redis and DB fallback."""
