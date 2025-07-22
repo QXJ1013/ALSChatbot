@@ -9,8 +9,8 @@ class Settings(BaseSettings):
     DEBUG: bool = False
 
     # API keys
-    HF_API_TOKEN="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"
-    HF_MODEL_NAME="mistralai/Mistral-7B-Instruct-v0.2"
+    # HF_API_TOKEN="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"
+    # HF_MODEL_NAME="mistralai/Mistral-7B-Instruct-v0.2"
     # OPENAI_API_KEY: Optional[str] = None  
     IBM_GRANITE_API_KEY: str
     IBM_GRANITE_API_URL: str = "https://api.us-south.ml.cloud.ibm.com"
